@@ -37,7 +37,7 @@ def main():
     while True:
         display_menu()
         
-        # Get user choice with input validation
+        # Check User Input 
         try:
             choice = input("\nEnter your choice: ")
             
