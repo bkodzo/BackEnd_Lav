@@ -1,4 +1,4 @@
--- 1️⃣ Create a books table with columns (id, title, author, year_published)
+--  Create a books table with columns (id, title, author, year_published)
 CREATE TABLE books (
     id INT PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE books (
     year_published INT
 );
 
--- 2️⃣ Insert at least 5 books into the table
+-- Insert at least 5 books into the table
 INSERT INTO books (id, title, author, year_published) VALUES
 (1, 'To Kill a Mockingbird', 'Harper Lee', 1960),
 (2, '1984', 'George Orwell', 1949),
@@ -14,7 +14,7 @@ INSERT INTO books (id, title, author, year_published) VALUES
 (4, 'Pride and Prejudice', 'Jane Austen', 1813),
 (5, 'The Catcher in the Rye', 'J.D. Salinger', 1951);
 
--- 3️⃣ Write queries to:
+-- Write queries to:
 
 -- Select all books
 SELECT * FROM books;
@@ -28,7 +28,7 @@ UPDATE books SET year_published = 1961 WHERE id = 1;
 -- Delete a book
 DELETE FROM books WHERE id = 5;
 
--- 4️⃣ Challenge: Create a borrowers table and connect it to books using a foreign key
+-- Challenge: Create a borrowers table and connect it to books using a foreign key
 
 -- Create borrowers table
 CREATE TABLE borrowers (
@@ -40,9 +40,9 @@ CREATE TABLE borrowers (
 
 -- Insert some borrowers
 INSERT INTO borrowers (id, name, email, phone) VALUES
-(1, 'John Smith', 'john@example.com', '555-1234'),
-(2, 'Sarah Johnson', 'sarah@example.com', '555-5678'),
-(3, 'Michael Brown', 'michael@example.com', '555-9012');
+(1, 'Joel Ammissah', 'john@example.com', '555-1234'),
+(2, 'Sarah Twum', 'sarah@example.com', '555-5678'),
+(3, 'Michael Oti', 'michael@example.com', '555-9012');
 
 -- Create a loans table to connect books and borrowers
 CREATE TABLE loans (
@@ -57,9 +57,9 @@ CREATE TABLE loans (
 
 -- Insert some loan records
 INSERT INTO loans (id, book_id, borrower_id, loan_date, return_date) VALUES
-(1, 1, 2, '2023-10-01', '2023-10-15'),
-(2, 3, 1, '2023-10-05', NULL),
-(3, 2, 3, '2023-09-28', '2023-10-12');
+(1, 1, 2, '2025-10-01', '2025-10-15'),
+(2, 3, 1, '2025-10-05', NULL),
+(3, 2, 3, '2025-09-28', '2025-10-12');
 
 -- Additional queries to demonstrate the relationship
 
