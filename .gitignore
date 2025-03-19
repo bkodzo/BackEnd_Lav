@@ -1,0 +1,7 @@
+Assignment 4/db_config.py
+# Python bytecode files
+__pycache__/
+*.py[cod]
+# Virtual environment
+lavender_env/
+venv/
