@@ -5,22 +5,25 @@ def display_menu():
     print("3. View All Books")
     print("4. Exit")
 
+
 def add_book(book_list):
     title = input("Enter the book title: ")
     book_list.append(title)
     print(f'"{title}" has been added to the library.')
 
+
 def remove_book(book_list):
     if not book_list:
         print("The library is empty. No books to remove.")
         return
-    
+
     title = input("Enter the book title to remove: ")
     if title in book_list:
         book_list.remove(title)
         print(f'"{title}" has been removed from the library.')
     else:
         print(f'"{title}" was not found in the library.')
+
 
 def view_books(book_list):
     print("\nBooks in the Library:")
@@ -30,17 +33,18 @@ def view_books(book_list):
         for book in book_list:
             print(f"- {book}")
 
+
 def main():
     print("Welcome to the Book Title Library!")
     book_list = []
-    
+
     while True:
         display_menu()
-        
-        # Check User Input 
+
+        # Check User Input
         try:
             choice = input("\nEnter your choice: ")
-            
+
             if choice == "1":
                 add_book(book_list)
             elif choice == "2":
@@ -54,6 +58,7 @@ def main():
                 print("Invalid choice. Please enter a number between 1 and 4.")
         except Exception as e:
             print("An error occurred. Please try again.")
+
 
 if __name__ == "__main__":
     main()

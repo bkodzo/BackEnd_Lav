@@ -1,0 +1,20 @@
+SQLs Trial/db_config.py
+# Python bytecode files
+__pycache__/
+*.py[cod]
+# Virtual environment
+lavender_env/
+venv/
+
+# Database
+db.sqlite3
+
+# Static folder at project root
+/static/
+
+
+._*
+.DS_Store
+.fseventsd
+.Spotlight-V100
+
