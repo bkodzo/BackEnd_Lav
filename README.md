@@ -84,8 +84,3 @@ The API will be available at http://127.0.0.1:8000/api/
 ## Admin Interface
 
 Access the Django admin interface at http://127.0.0.1:8000/admin/ using your superuser credentials. 
-
-## Development Branches
-
-- `master`: Main production branch with stable features
-- `altbranch`: Development branch for new features and testing 
