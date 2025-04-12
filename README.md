@@ -20,7 +20,7 @@ A simple REST API for managing books, authors, and categories using Django and P
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone ...
 cd book_management_api
 ```
 
@@ -28,7 +28,7 @@ cd book_management_api
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  
 ```
 
 ### 3. Install dependencies
@@ -84,3 +84,8 @@ The API will be available at http://127.0.0.1:8000/api/
 ## Admin Interface
 
 Access the Django admin interface at http://127.0.0.1:8000/admin/ using your superuser credentials. 
+
+## Development Branches
+
+- `master`: Main production branch with stable features
+- `altbranch`: Development branch for new features and testing 
